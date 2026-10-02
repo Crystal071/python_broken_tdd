@@ -17,7 +17,7 @@
 ## Быстрый путь
 
 ```bash
-git clone <url> && cd shop-broken-tdd
+git clone <url> shop-broken-tdd && cd shop-broken-tdd
 ./scripts/setup.sh
 ./scripts/doctor.sh      # убедиться, что всё в порядке
 ```
