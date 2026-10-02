@@ -14,7 +14,7 @@
 ## Быстрый старт (Ubuntu)
 
 ```bash
-git clone <url-репозитория> && cd shop-broken-tdd
+git clone <url-репозитория> shop-broken-tdd && cd shop-broken-tdd
 ./scripts/setup.sh      # поставит uv, Python 3.12 и зависимости
 ./scripts/check.sh      # локальная копия всех проверок CI — сразу будет красной
 ```
@@ -103,7 +103,7 @@ docs/                       окружение, постановки задач,
 * `part2-ci.yml` → `tests`, `checkout-coverage` (не ниже 90 % покрытия
   `shop.checkout`), `tdd-history` (проверяет, что тесты написаны раньше кода).
 
-Команды CI и команды скриптов **одина в один**: `./scripts/check.sh` запускает все
+Команды CI и команды скриптов **один в один**: `./scripts/check.sh` запускает все
 проверки пайплайна, а `./scripts/check-part1.sh` и `./scripts/check-part2.sh` —
 его части. Это главный навык работы: чинить сборку локально по выводу
 инструментов, а не в веб-интерфейсе GitHub.
